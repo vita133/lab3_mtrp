@@ -6,7 +6,7 @@ WORKDIR /home/gradle/src
 
 RUN gradle buildFatJar --no-daemon
 
-FROM openjdk:11
+FROM openjdk:11-jre-slim
 
 EXPOSE 8081:8081
 
